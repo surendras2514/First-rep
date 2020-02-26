@@ -24,7 +24,7 @@ import java.lang.*;
 	 public static void main(String[] args) 
 	 {
 		 try(MyAutoCloseable m=new MyAutoCloseable()){
-			 m.setAge(18);
+			 m.setAge(14);
 			 System.out.println("You are eligible");
 					 
 		 }

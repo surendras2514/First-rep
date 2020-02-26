@@ -23,7 +23,7 @@ public class CustomExceptionTest {
 	}
 	public static void main(String[] args) {
 		try {
-			setDay(40);
+			setDay(30);
 		} catch (DayException e) {
 			e.printStackTrace();
 		}

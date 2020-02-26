@@ -1,25 +1,27 @@
 package com.exception;
+import java.lang.annotation.*;
 
 public class ExceptionTest {
-	public static void main(String[] args) throws ArithmeticException
-	{
+	
+	public static void main(String[] args) 
+	{  
 		try {
-			System.out.println("Inside try");
 			int division=5/5;
-		}
-		finally {
-			try
-			{
-				int ary[]=new int[5];
-				ary[7]=6;
-			}
-			catch(ArrayIndexOutOfBoundsException e){
-				System.out.println("Inside exception");
-				
-			}
-			
+			System.out.println("Inside try");
+			int  divi=5/0;
 			
 		}
+		
+		catch(ArithmeticException e) {
+			System.out.println("You are dividing a number by zero");
+			e.printStackTrace();
+		}
+		
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		
 		
 		
 	}
